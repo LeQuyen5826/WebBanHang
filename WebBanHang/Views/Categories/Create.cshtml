@@ -1,0 +1,11 @@
+@model Category
+@{
+    ViewData["Title"] = "Thêm danh mục";
+}
+<h2>Thêm danh mục</h2>
+<form asp-action="Create" method="post">
+    <label asp-for="Name">Tên danh mục</label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name" class="error"></span>
+    <p><button>Lưu</button> <a asp-action="Index">Quay lại</a></p>
+</form>

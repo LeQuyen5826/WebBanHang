@@ -1,0 +1,19 @@
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "Tạo đơn hàng";
+}
+<h2>Tạo đơn hàng</h2>
+<form asp-action="Create" method="post">
+    @Html.ValidationSummary(true, "", new { @class = "error" })
+
+    <label>Tên khách hàng</label>
+    <input name="customerName" />
+
+    <label>Sản phẩm</label>
+    <select name="productId" asp-items="(SelectList)ViewBag.ProductId"></select>
+
+    <label>Số lượng</label>
+    <input name="quantity" type="number" min="1" value="1" />
+
+    <p><button>Tạo đơn</button> <a asp-action="Index">Quay lại</a></p>
+</form>

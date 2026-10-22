@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - WebBanHang</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <a class="brand" asp-controller="Home" asp-action="Index">WebBanHang</a>
+        <nav>
+            <a asp-controller="Products" asp-action="Index">Sản phẩm</a>
+            <a asp-controller="Categories" asp-action="Index">Danh mục</a>
+            <a asp-controller="Orders" asp-action="Index">Đơn hàng</a>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>&copy; 2026 WebBanHang</footer>
+</body>
+</html>

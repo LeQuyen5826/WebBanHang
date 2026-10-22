@@ -1,0 +1,23 @@
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model Product
+@{
+    ViewData["Title"] = "Thêm sản phẩm";
+}
+<h2>Thêm sản phẩm</h2>
+<form asp-action="Create" method="post">
+    <label asp-for="Name">Tên sản phẩm</label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name" class="error"></span>
+
+    <label asp-for="Price">Giá</label>
+    <input asp-for="Price" />
+    <span asp-validation-for="Price" class="error"></span>
+
+    <label asp-for="CategoryId">Danh mục</label>
+    <select asp-for="CategoryId" asp-items="(SelectList)ViewBag.CategoryId"></select>
+
+    <label asp-for="Description">Mô tả</label>
+    <textarea asp-for="Description" rows="3"></textarea>
+
+    <p><button>Lưu</button> <a asp-action="Index">Quay lại</a></p>
+</form>

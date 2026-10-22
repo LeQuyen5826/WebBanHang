@@ -1,0 +1,15 @@
+body { font-family: Segoe UI, Arial, sans-serif; margin: 0; color: #222; }
+header { background: #1f3a5f; padding: 12px 24px; display: flex; gap: 24px; align-items: center; }
+header a { color: #fff; text-decoration: none; }
+header .brand { font-weight: 700; font-size: 1.2rem; }
+nav { display: flex; gap: 16px; }
+main { padding: 24px; max-width: 960px; margin: auto; }
+footer { text-align: center; color: #888; padding: 24px; }
+table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background: #f0f3f7; }
+label { display: block; margin-top: 12px; font-weight: 600; }
+input, select, textarea { padding: 6px; width: 320px; max-width: 100%; }
+button, .btn { padding: 6px 14px; background: #1f3a5f; color: #fff; border: 0; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; }
+button.danger { background: #b3261e; }
+.error { color: #b3261e; display: block; }
